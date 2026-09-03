@@ -80,7 +80,7 @@ Evaluation
 To evaluate the pre-trained model, run:
 ```Bash
 # Example running script for evaluation
-python evaluate.py --dataset s3dis --MODEL ./MODEL/s3dis.pth
+python evaluate.py --dataset s3dis --model ./model/s3dis.pth
 ```` 
 
 ## 📦 Model Zoo
@@ -91,8 +91,8 @@ Below are the pre-trained models provided in this repository.
 | **PCM** | S3DIS | 79.33% | [config](https://github.com/PointCouplingMode/PCM/blob/main/configs/s3dis/s3dis.yaml)  | [Download](https://github.com/PointCouplingMode/PCM/releases) |   [link](https://github.com/PointCouplingMode/PCM/raw/main/tools/exp/default/ExpRecord/s3dis.log)   |
 | **PCM** | ScanNetV2 | 79.24% | [config](https://github.com/PointCouplingMode/PCM/blob/main/configs/scannet/semseg-pt-v3m1-0-base.yaml)  | [Download](https://github.com/PointCouplingMode/PCM/releases) | [link](https://github.com/PointCouplingMode/PCM/raw/main/tools/exp/default/ExpRecord/scannetv2.log) |
 
-*(Note: Download the weights and place them in the `./checkpoints/` folder. For the **Exp Record**, please **Right-Click** the link and select **"Save Link As..." ** to download the complete `.log` files due to their large size.)*
+*(Note: Download the weights and place them in the `./model/` folder. For the **Exp Record**, please **Right-Click** the link and select **"Save Link As..." ** to download the complete `.log` files due to their large size.)*
 
-(Note: Download the weights and place them in the ./checkpoints/ folder.)
+
 
 Acknowledgments: This codebase is heavily inspired by excellent open-source projects like Pointcept and Point Transformer V3. We thank the authors for their great contributions to the community.
