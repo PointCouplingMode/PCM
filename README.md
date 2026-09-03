@@ -42,7 +42,7 @@ If you find PCM useful to your research, please cite our work as an acknowledgme
 ```` 
 ## 🛠️ Installation
 Requirements
-The code has been tested with Python 3.8/3.9 and PyTorch. We highly recommend using Anaconda to manage your environment.
+The code has been tested with Python 3.12 and PyTorch. We highly recommend using Anaconda to manage your environment.
 
 ```Bash
 # 1. Clone the repository
@@ -74,22 +74,22 @@ Training
 To train the PCM model from scratch on the dataset, run:
 ```Bash
 # Example running script for S3DIS training
-python train.py --dataset s3dis --config configs/pcm_s3dis.yaml
+python train.py --dataset s3dis --config configs/s3dis.yaml
 ```` 
 Evaluation
 To evaluate the pre-trained model, run:
 ```Bash
 # Example running script for evaluation
-python evaluate.py --dataset s3dis --checkpoint ./checkpoints/pcm_s3dis.pth
+python evaluate.py --dataset s3dis --MODEL ./MODEL/s3dis.pth
 ```` 
 
 ## 📦 Model Zoo
 Below are the pre-trained models provided in this repository.
 
-| Model | Benchmark | Val mIoU | Config | Checkpoint | Exp Record |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| **PCM** | S3DIS | 79.33% | [config](#) | [Download](https://github.com/PointCouplingMode/PCM/releases) | [link](#) |
-| **PCM** | ScanNetV2 | 79.24% | [config](#) | [Download](https://github.com/PointCouplingMode/PCM/releases) | [link](#) |
+| Model | Benchmark | Val mIoU |                                    Config                                    | Checkpoint |                                         Exp Record                                         |
+| :---: | :---: | :---: |:----------------------------------------------------------------------------:| :---: |:------------------------------------------------------------------------------------------:|
+| **PCM** | S3DIS | 79.33% | [config](https://github.com/PointCouplingMode/PCM/blob/main/configs/s3dis/s3dis.yaml)  | [Download](https://github.com/PointCouplingMode/PCM/releases) |   [link](https://github.com/PointCouplingMode/PCM/blob/main/tools/exp/default/ExpRecord/s3dis.log)   |
+| **PCM** | ScanNetV2 | 79.24% | [config](https://github.com/PointCouplingMode/PCM/blob/main/configs/scannet/semseg-pt-v3m1-0-base.yaml)  | [Download](https://github.com/PointCouplingMode/PCM/releases) | [link](https://github.com/PointCouplingMode/PCM/blob/main/tools/exp/default/ExpRecord/scannetv2.log) |
 
 (Note: Download the weights and place them in the ./checkpoints/ folder.)
 
