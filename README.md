@@ -88,8 +88,8 @@ Below are the pre-trained models provided in this repository.
 
 | Model | Benchmark | Val mIoU |                                    Config                                    | Checkpoint |                                         Exp Record                                         |
 | :---: | :---: | :---: |:----------------------------------------------------------------------------:| :---: |:------------------------------------------------------------------------------------------:|
-| **PCM** | S3DIS | 79.33% | [config](https://github.com/PointCouplingMode/PCM/blob/main/configs/s3dis/s3dis.yaml)  | [Download](https://github.com/PointCouplingMode/PCM/releases) |   [link](https://github.com/PointCouplingMode/PCM/blob/main/tools/exp/default/ExpRecord/s3dis.log)   |
-| **PCM** | ScanNetV2 | 79.24% | [config](https://github.com/PointCouplingMode/PCM/blob/main/configs/scannet/semseg-pt-v3m1-0-base.yaml)  | [Download](https://github.com/PointCouplingMode/PCM/releases) | [link](https://github.com/PointCouplingMode/PCM/blob/main/tools/exp/default/ExpRecord/scannetv2.log) |
+| **PCM** | S3DIS | 79.33% | [config](https://github.com/PointCouplingMode/PCM/blob/main/configs/s3dis/s3dis.yaml)  | [Download](https://github.com/PointCouplingMode/PCM/releases) |   [link](https://github.com/PointCouplingMode/PCM/raw/main/tools/exp/default/ExpRecord/s3dis.log)   |
+| **PCM** | ScanNetV2 | 79.24% | [config](https://github.com/PointCouplingMode/PCM/blob/main/configs/scannet/semseg-pt-v3m1-0-base.yaml)  | [Download](https://github.com/PointCouplingMode/PCM/releases) | [link](https://github.com/PointCouplingMode/PCM/raw/main/tools/exp/default/ExpRecord/scannetv2.log) |
 
 (Note: Download the weights and place them in the ./checkpoints/ folder.)
 
